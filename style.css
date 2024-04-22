@@ -1,4 +1,5 @@
-*, html{
+*,
+html {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -52,28 +53,29 @@
     font-weight: 400;
 }
 
-:root{
-    --mainColor:#ff3c00;
-    --backgroundColor:#f3f0e7;
-    --nuanceColor:#ffdbd1;
-    --lightColor:#ffffff;
-    --darkColor:#000000;
+:root {
+    --mainColor: #ff3c00;
+    --backgroundColor: #f3f0e7;
+    --nuanceColor: #ffdbd1;
+    --lightColor: #ffffff;
+    --darkColor: #000000;
 }
 
-/* Barre de navigation */
+/* NAV BAR */
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-weight:800;
-    border-bottom:2px solid var(--mainColor);
+    font-weight: 800;
+    border-bottom: 2px solid var(--mainColor);
     width: 100%;
     height: 120px;
+    font-size: 17px;
 }
 
-.menu{
-    border-left:2px solid var(--mainColor);
+.menu {
+    border-left: 2px solid var(--mainColor);
     height: 100%;
     width: 60%;
     display: flex;
@@ -81,43 +83,141 @@ nav {
     align-items: center;
 }
 
-.logo{
+.logo {
     padding: 46px 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 20%;
     height: 100%;
 }
 
-.logo h2{
-    font-family:"BWGradual";
+.logo h2 {
+    font-family: "BWGradual";
     font-weight: 500;
 }
 
-.logo h2 span{
-    font-family:"BWGradual";
+.logo h2 span {
+    font-family: "BWGradual";
     font-weight: 900;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-.menu a:not(.projectLink){
+.menu a:not(.projectLink) {
     margin-right: 50px;
 }
 
-.contact{
+.contact {
     width: 20%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-left:2px solid var(--mainColor);
+    border-left: 2px solid var(--mainColor);
 }
 
-.contact a{
-    border:2px solid var(--mainColor);
+.contact a {
+    border: 2px solid var(--mainColor);
     border-radius: 50px;
     padding: 13px 31px;
 }
 
-/* Section principale */
+/* MAIN SECTION */
+.header {
+    height: 100vh;
+    width: 100%;
+    padding: 48px 50px;
+}
+
+.header h2 {
+    font-size: 160px;
+    font-weight: 800;
+    font-family: "BWGradual";
+}
+
+.header h2 span {
+    font-family: "BWGradual";
+    box-sizing: content-box;
+    color: var(--backgroundColor);
+    -webkit-text-stroke: 2px var(--mainColor);
+}
+
+section h1 {
+    margin-top: 33px;
+    font-size: 17px;
+}
+
+.basicButton {
+    padding: 13px 30px;
+    font-weight: 800;
+    border: 2px solid var(--mainColor);
+    border-radius: 50px;
+    margin-top: 50px;
+}
+
+.basicButton:hover {
+    background-color: var(--mainColor);
+    color: var(--backgroundColor);
+    transition: background-color 450ms ease;
+}
+
+/* ABOUT SECTION */
+
+.globalSectionSetting{
+    padding: 48px 7px;
+    margin: 0 43px;
+    height: 100vh;
+    width: 100%;
+}
+
+.about {
+    font-size: 16px;
+    border-top: 2px solid var(--mainColor);
+    display: flex;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    height: 100%;
+    border-right: 1px solid var(--mainColor);
+}
+
+.titleStar {
+    display: flex;
+}
+
+.titleStar img {
+    width: 22px;
+    height: 22px;
+    margin-right: 5px;
+}
+
+.left button {
+    width: max-content;
+}
+
+.aboutDetails h2 {
+    font-weight: 900;
+}
+
+.aboutDetails h3 {
+    font-weight: 400;
+    margin-top: 48px;
+}
+
+.right {
+    width: 50%;
+    margin: 0 66px;
+}
+
+/* PROJECTS SECTION */
+
+.projects{
+    margin-top: 50px;
+}
