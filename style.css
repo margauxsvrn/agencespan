@@ -1,0 +1,123 @@
+*, html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter";
+    color: var(--mainColor);
+    background-color: var(--backgroundColor);
+    text-transform: uppercase;
+}
+
+/* Import font Inter */
+@font-face {
+    font-family: "Inter";
+    src: url("./fonts/inter/Inter-SemiBold.ttf") format("truetype");
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("./fonts/inter/Inter-Bold.ttf") format("truetype");
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("./fonts/inter/Inter-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("./fonts/inter/Inter-Medium.ttf") format("truetype");
+    font-weight: 500;
+}
+
+/* Import font BW */
+@font-face {
+    font-family: "BWGradual";
+    src: url("./fonts/bw/BwGradualDEMO-ExtraBold.otf") format("opentype");
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "BWGradual";
+    src: url("./fonts/bw/BwGradualDEMO-Medium.otf") format("opentype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "BWGradual";
+    src: url("./fonts/bw/BwGradualDEMO-Regular.otf") format("opentype");
+    font-weight: 400;
+}
+
+:root{
+    --mainColor:#ff3c00;
+    --backgroundColor:#f3f0e7;
+    --nuanceColor:#ffdbd1;
+    --lightColor:#ffffff;
+    --darkColor:#000000;
+}
+
+/* Barre de navigation */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight:800;
+    border-bottom:2px solid var(--mainColor);
+    width: 100%;
+    height: 120px;
+}
+
+.menu{
+    border-left:2px solid var(--mainColor);
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    padding: 46px 58px;
+    width: 20%;
+    height: 100%;
+}
+
+.logo h2{
+    font-family:"BWGradual";
+    font-weight: 500;
+}
+
+.logo h2 span{
+    font-family:"BWGradual";
+    font-weight: 900;
+}
+
+a{
+    text-decoration: none;
+}
+
+.menu a:not(.projectLink){
+    margin-right: 50px;
+}
+
+.contact{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left:2px solid var(--mainColor);
+}
+
+.contact a{
+    border:2px solid var(--mainColor);
+    border-radius: 50px;
+    padding: 13px 31px;
+}
+
+/* Section principale */
